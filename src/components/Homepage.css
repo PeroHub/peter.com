@@ -1,0 +1,10 @@
+.homepage {
+    min-height: 500px;
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.homepage::-webkit-scrollbar {
+    display: none;
+  }

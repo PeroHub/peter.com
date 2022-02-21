@@ -1,0 +1,185 @@
+
+
+.Main{
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.job {
+    font-size: 50px;
+    letter-spacing: 0px;
+    line-height: 100%;
+    color: #5e5959;
+}
+
+.Main-con p:last-child {
+    color: #1a1a1a;
+}
+
+.Main-con :first-child {
+    font-size: 20px;
+}
+
+.image-container {
+    margin-top: 50px;
+    object-fit: contain;
+    width: 100%;
+    height: 500px;
+   
+}
+
+.image-container img {
+    width: 100%;
+    height: inherit;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.quote-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text p {
+    margin: 100px 0px;
+    color: #5e5959;
+    font-size: 20px;
+}
+
+.quote-text span {
+    color: #c33149;
+}
+
+.project-con h3 {
+    font-size: 30px;
+}
+
+.project-con .project-item-con .project-item {
+    
+    margin-top: 50px;
+    box-shadow: 0 2px 5px #888888;
+}
+
+.project-con .project-item-con .project-item h4{
+    font-size: 20px;
+}
+
+.project-con .project-item-con .project-item p {
+    font-size: 14px;
+    color: #5e5959;
+    margin-top: -20px;
+}
+
+.project-con .project-item-con .project-item-text {
+    padding: 20px;
+}
+
+.project-con .seeMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .outer {
+    margin: 50px; 
+  }
+  
+  .button {
+    border: 1px solid #92b7ff;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    display: block;
+    background: linear-gradient(to right, #d3e2ff 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  
+  .button:hover {
+    background-position: left bottom;
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px; 
+    color: black;
+    transition: all .6s ease-out;
+    display: block;
+  }
+  
+  .text:hover {
+    color: black;  
+  }
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .Main-con {
+            display: flex;
+            width: 100%;
+            
+        }
+
+        .Main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Main .Main-con-item {
+            width: 80%;
+            padding: 50px;
+        }
+
+        .Main .image-container {
+            width: 50%;
+        }
+
+        .project-con {
+            width: 100%;
+        }
+
+        .project-con .project-item-con {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-con .project-item-con .project-item {
+            width: 100%;
+            margin: 25px;
+        }
+
+        .project-con .project-item-con .project-item .image-container {
+            width: 100%;
+        }
+
+        .outer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            width: 50%;
+        }
+    }
+  
+
+    @media only screen and (min-width: 1200px) {
+        .Main-con {
+            display: flex;
+            width: 70%;
+            padding: 30px;
+        }
+
+        .project-con {
+            width: 60%;
+            padding: 50px;
+        }
+    }

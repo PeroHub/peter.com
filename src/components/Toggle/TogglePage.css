@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.togglepage{
+    outline: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+    background: #256eff;
+}
+
+.headerToggle {
+    padding: 20px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #256eff;
+}

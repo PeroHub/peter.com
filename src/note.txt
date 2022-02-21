@@ -1,0 +1,14 @@
+Portfolio site
+Header
+Main
+Footer {
+    text
+    contact/social icons
+}
+
+menu page {
+    home
+    project
+    contact
+    About
+}

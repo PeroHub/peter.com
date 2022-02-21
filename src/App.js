@@ -1,25 +1,30 @@
 import logo from './logo.svg';
+import { useState, useEffect } from 'react'
 import './App.css';
+import Homepage from './components/Homepage';
 
 function App() {
+
+  const [ loading, setLoading ] =  useState(true)
+ 
+  useEffect(() => {
+    // this simulates an async action, after which the component will render the content
+    demoAsyncCall().then(() => setLoading(false));
+  },[])
+
+  if(loading){
+    return null
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Homepage />
     </div>
   );
+}
+
+function demoAsyncCall() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 4000));
 }
 
 export default App;
